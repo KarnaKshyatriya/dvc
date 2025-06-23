@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Examination</title>
+    <!-- <link rel="stylesheet" href="Exam.css" /> -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #18578f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Comic Sans MS;
+        font-size: large;
+      }
+      .container {
+        background-color: #09722d;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 80%;
+        max-width: 800px;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .question h3 {
+        margin-bottom: 10px;
+      }
+      .question label {
+        display: block;
+        margin: 5px 0;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 23vw;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      .top {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 90px;
+        border: 1px solid black;
+        background-color: #a02e4c;
+        /* optional: centers vertically */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <img src="aceslogo.JPG" alt="Aces Logo" width="120" height="80" />
+      </div>
+      <marquee>ACES &copy; Online Exam</marquee>
+      <h1>MCQ Examination</h1>
+      <form id="exam-form">
+        <!-- Questions will be injected here by JavaScript -->
+      </form>
+      <button type="button" onclick="checkAnswers()">Submit</button>
+      <p id="result"></p>
+    </div>
+    <script src="Exam.js"></script>
+  </body>
+</html>
