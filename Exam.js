@@ -1,7 +1,7 @@
 // JSON structure with questions and options
 const questionsData = [
   {
-    question: "01.Microsoft Windows is an",
+    question: "Microsoft Windows is an",
     options: [
       "Operating System",
       "Graphic Program ",
@@ -39,6 +39,11 @@ const questionsData = [
       "All of the above",
     ],
     correctOption: 3,
+  },
+  {
+    question: "The shortcut command of 'save' in ms-word is: ",
+    options: ["ctrl+c","ctrl+v","ctrl+s","ctrl+a"],
+    correctOption: 2,
   },
   {
     question:
